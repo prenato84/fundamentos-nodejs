@@ -1,6 +1,6 @@
-# bootcamp-gostack-desafio-2
+# bootcamp-gostack-desafio-5
 
-Desafio 2 do Bootcamp GoStack 11
+Desafio 5 do Bootcamp GoStack 11
 
 <img alt="GoStack" src="https://storage.googleapis.com/golden-wind/bootcamp-gostack/header-desafios.png" />
 
@@ -35,7 +35,7 @@ Desafio 2 do Bootcamp GoStack 11
 
 ## :rocket: Sobre o desafio
 
-Nesse desafio, foi criada uma aplicação para continuar treinando o que aprendi até agora no Node.js junto ao TypeScript, utilizando o conceito de models, repositories e services!
+Nesse desafio foi criada uma aplicação para continuar treinando o que aprendi até agora no Node.js junto ao TypeScript, utilizando o conceito de models, repositories e services!
 
 É uma aplicação para armazenar transações financeiras de entrada e saída, que deve permitir o cadastro e a listagem dessas transações.
 
