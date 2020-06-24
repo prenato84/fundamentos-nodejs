@@ -20,27 +20,11 @@ class ListTransactionsService {
   public execute(): TransactionsAndBalance {
     const transactions = this.transactionRepository.all();
 
-    const incomeTotal = transactions.reduce((total, transaction) => {
-      if (transaction.type === 'income') {
-        return total + transaction.value;
-      }
-      return total;
-    }, 0);
-
-    const outcomeTotal = transactions.reduce((total, transaction) => {
-      if (transaction.type === 'outcome') {
-        return total + transaction.value;
-      }
-      return total;
-    }, 0);
+    const balance = this.transactionRepository.getBalance();
 
     const transactionsAndBalance = {
       transactions,
-      balance: {
-        income: incomeTotal,
-        outcome: outcomeTotal,
-        total: incomeTotal - outcomeTotal,
-      },
+      balance,
     };
 
     return transactionsAndBalance;
