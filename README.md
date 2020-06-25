@@ -59,6 +59,12 @@ Nesse desafio foi criada uma aplicação para continuar treinando o que aprendi 
 yarn
 ```
 
+- Rode os testes
+
+```
+yarn test
+```
+
 - Execute o projeto
 
 ```
@@ -66,7 +72,7 @@ yarn dev:server
 ```
 
 <p align="center">
-  <img src="./assets/yarn-dev.png">
+  <img src="./assets/tests.png">
 </p>
 
 ### Template da aplicação
