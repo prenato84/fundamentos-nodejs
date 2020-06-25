@@ -21,6 +21,10 @@ class CreateTransactionService {
       type,
     });
 
+    if (!transaction) {
+      throw Error('Outcome value cannot superpass total amount');
+    }
+
     return transaction;
   }
 }

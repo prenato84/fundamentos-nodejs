@@ -47,8 +47,18 @@ class TransactionsRepository {
     return balance;
   }
 
-  public create({ title, value, type }: CreateTransactionDTO): Transaction {
+  public create({
+    title,
+    value,
+    type,
+  }: CreateTransactionDTO): Transaction | null {
     const transaction = new Transaction({ title, value, type });
+
+    const { total } = this.getBalance();
+
+    if (type === 'outcome' && value > total) {
+      return null;
+    }
 
     this.transactions.push(transaction);
 
